@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+       background: linear-gradient(
+        150deg,
+        rgba(255,162,0,1) 0%,
+        rgba(217,50,50,1) 50%,
+        rgba(240,79,226,1) 100%
+         );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* De container die alles centreert */
+.registeer-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Het witte/transparante blok */
+.login-box {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparant */
+    backdrop-filter: blur(10px); /* Maakt de achtergrond wazig achter het blok */
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* De input velden */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+}
+
+/* De inlogknop */
+.login-button {
+    width: 80%;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: white; /* Een diepblauwe kleur passend bij Eredivisie */
+    color: #989898;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button a {
+    color: #989898;
+    text-decoration: none;
+}
+
+.login-button:hover {
+    background: linear-gradient(
+        150deg,
+        rgba(255,162,0,1) 0%,
+        rgba(217,50,50,1) 50%,
+        rgba(240,79,226,1) 100%
+         );
+    transform: translateY(-2px);
+}
+
+/* De registratie link */
+.register-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.register-link a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+.back-button a {
+    margin-top: 30px;
+       background: rgba(255, 255, 255, 0.1); /* Semi-transparant */
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 20px;    
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    position: fixed;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.6);
+    margin-left: 200px;
+    margin-top: -380px;
+}
+
+.back-button a:hover {
+    background: linear-gradient(
+        150deg,
+        rgba(255,162,0,1) 0%,
+        rgba(217,50,50,1) 50%,
+        rgba(240,79,226,1) 100%
+         );
+    transform: translateY(-2px);
+}
+
+.bottom-image {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    bottom: 40px;
+    position: fixed;
+}
+
+.logo1 {
+    position: fixed;
+    top: -20px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 45px;
+    box-sizing: border-box;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+}
+
+.toggle-password:hover {
+    color: #333;
+}

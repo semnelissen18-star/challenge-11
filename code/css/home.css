@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(
+        150deg,
+        rgba(255,162,0,1) 0%,
+        rgba(217,50,50,1) 50%,
+        rgba(240,79,226,1) 100%
+    );
+}
+.header {
+    width: 80%;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    
+
+    padding: 20px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 60px;
+    border-radius: 40px;
+}
+
+.search-box {
+    position: relative;
+    width: 300px;
+}
+
+.search-box input {
+    width: 80%;
+    border: none;
+    outline: none;
+    background: linear-gradient(
+        150deg,
+        rgba(255,162,0,1) 0%,
+        rgba(217,50,50,1) 50%,
+        rgba(240,79,226,1) 100%
+    );
+    padding: 10px 40px 10px 15px; /* ruimte rechts voor icoon */
+    border-radius: 50px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.search-box .icon {
+    position: absolute;
+    right: 75px;
+    top: 22%;
+    cursor: pointer;
+    color: #666;
+}
+
+.search-box input::placeholder {
+    color: #999;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    margin-left: 50px;
+    gap: 10px;
+    font-weight: bold;
+   
+}
+
+.content {
+    width: 70%;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin-left: 15%;
+    margin-top: 60px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.6);
+}
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}   
+
+.content p {
+    font-size: 35px;
+    margin-top: 20px;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+}
+
+.home-button {
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;    
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    margin-left: 25%;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.6);
+}
+
+.footer {
+    background: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    border-radius: 100% 100% 0 0;
+    padding: 30px 80px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.6);
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* alles onder uitlijnen */
+}
+
+.left {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.logo-footer {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: -25px; /* Logo iets naar beneden plaatsen */
+}
+
+.left p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    margin-left: 10px;
+}
+
+.right p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    margin-right: 10px;
+}
+
+
+.socials {
+    display: flex;
+    gap: 50px;
+    margin-right: 100px;
+}
