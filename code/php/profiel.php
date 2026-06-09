@@ -1,23 +1,3 @@
-<?php
-session_start();
-
-
-$conn = new mysqli("localhost", "root", "root", "skillsphere-ch11");
-
-// pak user id uit session
-$user_id = $_SESSION['user_id'];
-
-// haal username op uit database
-$sql = "SELECT username FROM users WHERE id = ?";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("i", $user_id);
-$stmt->execute();
-$result = $stmt->get_result();
-
-$user = $result->fetch_assoc();
-?>
-
-<h1>Welkom, <?php echo $user['username']; ?> 👋</h1>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,8 +5,7 @@ $user = $result->fetch_assoc();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skillsphere</title>
-    <link rel="stylesheet" href="../css/profiel.css?v=2">
-    <script src="../js/profiel.js"></script>
+    <link rel="stylesheet" href="../css/profiel.css?v=1">
 </head>
 
 <body>
@@ -40,12 +19,6 @@ $user = $result->fetch_assoc();
         <div class="search-box">
             <input type="text" placeholder="Zoeken...">
             <span class="icon">🔍</span>
-        </div>
-
-        <div class="box2">
-            <div class="usericon">
-                <img src="../../image/User-Icon-Grey.webp" alt="usericon" width="100" height="100">
-            </div>
         </div>
 
         <div class="nav">
