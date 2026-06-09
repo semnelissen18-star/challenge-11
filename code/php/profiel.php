@@ -54,6 +54,7 @@ $user = $result->fetch_assoc();
             <a href="settings.php">Challenges</a>
             <a href="logout.php">Profiel</a>
             <a href="inloggen.php">Login</a>
+            <a href="inloggen.php">Logout</a>
         </div>
 
     </div>
