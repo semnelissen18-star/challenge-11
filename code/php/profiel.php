@@ -6,8 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skillsphere</title>
-    <link rel="stylesheet" href="../css/profiel.css?v=2">
-    <script src="../js/profiel.js"></script>
+    <link rel="stylesheet" href="../css/profiel.css?v=1">
 </head>
 
 <body>
@@ -21,12 +20,6 @@
         <div class="search-box">
             <input type="text" placeholder="Zoeken...">
             <span class="icon">🔍</span>
-        </div>
-
-        <div class="box2">
-            <div class="usericon">
-                <img src="../../image/User-Icon-Grey.webp" alt="usericon" width="100" height="100">
-            </div>
         </div>
 
         <div class="nav">
