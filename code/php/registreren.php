@@ -6,17 +6,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $user  = $_POST['username'];
     $email = $_POST['email'];
     $name  = $_POST['name'];
+    $opleiding = $_POST['opleiding'];
     $lastname = $_POST['lastname']; // Sla dit op in een eigen variabele
     
     // 2. Veiligheid: Gebruik ALTIJD password_hash!
     $pass = password_hash($_POST['password'], PASSWORD_DEFAULT); 
 
     // 3. Bereid de query voor
-    $stmt = $conn->prepare("INSERT INTO registreren (username, password, email, name, lastname) VALUES (?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO registreren (username, password, email, name, lastname, opleiding) VALUES (?, ?, ?, ?, ?, ?)");
     
     try {
         // 4. Geef de variabelen in de juiste volgorde mee
-        $stmt->execute([$user, $pass, $email, $name, $lastname]);
+        $stmt->execute([$user, $pass, $email, $name, $lastname, $opleiding]);
       $message = "<div class='alert success'>Account aangemaakt! <a href='index.html'>Log hier in</a></div>";
       
       
@@ -35,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../css/registreren.css?v=1">
+    <link rel="stylesheet" href="../css/registreren.css?v=2">
     <title>Registreren | Skillsphere</title>
 </head>
 <body>
@@ -59,6 +60,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
                 <div class="input-group">
                     <input type="email" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="input-group">
+                    <input type="opdleiding" name="opleiding" placeholder="opleiding" required>
                 </div>
 
                 <button type="submit" class="login-button">Registreren</button>

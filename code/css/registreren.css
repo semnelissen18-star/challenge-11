@@ -140,13 +140,13 @@ body {
     display: flex;
     justify-content: center;
     gap: 50px;
-    bottom: 40px;
+    bottom: 20px;
     position: fixed;
 }
 
 .logo1 {
     position: fixed;
-    top: -20px;
+    top: -35px;
 }
 
 .password-container {

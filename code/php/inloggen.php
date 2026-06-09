@@ -4,7 +4,7 @@ require 'db.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    $username = $_POST['username'];
+    $username = trim($_POST['username']);
     $password = $_POST['password'];
 
     $stmt = $conn->prepare("SELECT * FROM registreren WHERE username = ?");
@@ -14,7 +14,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($user && password_verify($password, $user['password'])) {
 
+        // Sessiegegevens opslaan
+        $_SESSION['user_id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
+        $_SESSION['name'] = $user['name'];
 
         header("Location: home.php");
         exit();
@@ -24,7 +27,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="nl">
 <head>
