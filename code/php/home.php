@@ -22,7 +22,7 @@
 
         <div class="nav">
             <a href="home.php">Home</a>
-            <a href="profile.php">Skills</a>
+            <a href="quiz.php">Quiz</a>
             <a href="settings.php">Challenges</a>
             <a href="profiel.php">Profiel</a>
             <a href="inloggen.php">Login</a>
