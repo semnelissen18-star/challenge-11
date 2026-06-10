@@ -26,7 +26,7 @@ $user = $result->fetch_assoc();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skillsphere</title>
-    <link rel="stylesheet" href="../css/profiel.css?v=6">
+    <link rel="stylesheet" href="../css/profiel.css?v=8">
 </head>
 
 <body>
@@ -44,8 +44,9 @@ $user = $result->fetch_assoc();
 
         <div class="nav">
             <a href="home.php">Home</a>
-            <a href="profile.php">Quiz</a>
-            <a href="logout.php">Profiel</a>
+            <a href="quiz.php">Quiz</a>
+            <a href="profiel.php">Profiel</a>
+            <a href="leaderboard.php">Leaderboard</a>
             <a href="inloggen.php">Login</a>
         </div>
 
