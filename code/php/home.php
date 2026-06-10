@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skillsphere</title>
-    <link rel="stylesheet" href="../css/home.css?v=5">
+    <link rel="stylesheet" href="../css/home.css?v=9">
 </head>
 
 <body>
@@ -23,7 +23,6 @@
         <div class="nav">
             <a href="home.php">Home</a>
             <a href="quiz.php">Quiz</a>
-            <a href="settings.php">Challenges</a>
             <a href="profiel.php">Profiel</a>
             <a href="inloggen.php">Login</a>
         </div>
@@ -41,7 +40,6 @@
 
     <div class="home-buttons">
         <a href="profile.php" class="home-button">Start nu hier</a>
-        <a href="settings.php" class="home-button">Bekijk Community</a>
     </div>
 
     <footer class="footer">

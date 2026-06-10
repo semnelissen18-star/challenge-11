@@ -45,7 +45,6 @@ $user = $result->fetch_assoc();
         <div class="nav">
             <a href="home.php">Home</a>
             <a href="profile.php">Quiz</a>
-            <a href="settings.php">Challenges</a>
             <a href="logout.php">Profiel</a>
             <a href="inloggen.php">Login</a>
         </div>
