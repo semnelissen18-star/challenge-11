@@ -101,38 +101,3 @@ body {
     font-size: 67px;
     margin-bottom: 1px;
 }
-
-.quiz-box p {
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-
-.quiz-tags {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: 20px 0;
-}
-
-.quiz-tags button {
-    padding: 60px 110px;
-    border: none;
-    border-radius: 25px;
-    background:     rgb(179, 179, 199);
-    color: white;
-    font-size: 40px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s ease;
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.6);
-}
-
-.quiz-tags button:hover {
-   background: linear-gradient(
-        150deg,
-        rgba(255,162,0,1) 0%,
-        rgba(217,50,50,1) 50%,
-        rgba(240,79,226,1) 100%
-         );
-    transform: translateY(-2px);
-}
