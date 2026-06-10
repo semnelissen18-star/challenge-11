@@ -24,7 +24,7 @@ $user = $result->fetch_assoc();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/quiz.css?v=5">
+    <link rel="stylesheet" href="../css/html-quiz.css?v=1">
     <title>Quiz | Skillsphere</title>
 </head>
 <body>
@@ -53,12 +53,3 @@ $user = $result->fetch_assoc();
 
 <div class="quiz-box">
     <h1>Quiz</h1>
-    <p>Test je kennis en verdien badges!</p>
-       
-    <div class="quiz-tags">
-        <button onclick="window.location.href='html-quiz.php'">HTML</button>
-        <button onclick="window.location.href='css-quiz.php'">CSS</button>
-        <button onclick="window.location.href='php-quiz.php'">PHP</button>
-    </div>
-    </div>
-</div>
